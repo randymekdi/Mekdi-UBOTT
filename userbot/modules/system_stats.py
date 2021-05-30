@@ -227,7 +227,7 @@ async def amireallyalive(alive):
     await asyncio.sleep(3)
     output = (
         f"**╔══════╣❃ ♕ ❃╠══════╗** \n"
-        f"**        ۩  ⬚⃝⃟    RAM-UBOT ⬚⃝⃟     ۩ ** \n"
+        f"**        ۩  ⬚⃝⃟    MEKDI-iBOT ⬚⃝⃟     ۩ ** \n"
         f"**╚══════╣❃ ♕ ❃╠══════╝** \n"
         f"\n__**{RAM_TEKS_KOSTUM}**__\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
@@ -267,7 +267,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-        f"             **♕ RAM-UBOT ♕** \n"
+        f"             **♕ MEKDI-iBOT ♕** \n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
         f"❃ **Tuan**             ➥ `{DEFAULTUSER}` \n"
         f"❃ **Username**    ➥ `@{user.username}` \n"
@@ -303,14 +303,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╠╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╣** \n"
-        f"**            👿RAM-UBOT👿** \n"
+        f"**            🔥MEKDI-iBOT🔥** \n"
         f"**╠╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╣** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"┣|• `🤴 Majikan  :`{DEFAULTUSER} \n"
         f"┣|• `💳 Username :`@{user.username} \n"
         f"┣|• `👺 Telethon :`Ver {version.__version__} \n"
         f"┣|• `🐉 Python   :`Ver {python_version()} \n"
-        f"┣|• `Branch      :`RAM-UBOT \n"
+        f"┣|• `Branch      :`MEKDI-iBOT \n"
         f"┣|• `Bot Ver     :`7.0 \n"
         f"┣|• `Modules     :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
