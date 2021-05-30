@@ -62,7 +62,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**╭━━━━━━━━━━━━━━━━━╮** \n"
-                    f"**        ✨ 𝗥 𝗔 𝗠 - 𝗨 𝗕 𝗢 𝗧 ✨** \n"
+                    f"**        ✨ 𝗠 𝗘 𝗞 𝗗 𝗜 - 𝗶𝗕𝗢𝗧 ✨** \n"
                     f"**  ✠╼━━━━━━❖━━━━━━━✠** \n"
                     f"**        • sɪɢɴᴀʟ  :** `%sms` \n"
                     f"**        • ᴏᴡɴᴇʀ   :** `{ALIVE_NAME}` \n"
@@ -132,7 +132,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-                    f"**            ⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐**\n"
+                    f"**            ⭐ 𝗠 𝗘 𝗞 𝗗 𝗜 - 𝗶𝗕𝗢𝗧 ⭐**\n"
                     f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
                     f"** •  Sɪɢɴᴀʟ   :** "
                     f"`%sms` \n"
@@ -148,11 +148,11 @@ async def redis(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     await pong.edit("Ping")
-    await pong.edit("🌕")
+    await pong.edit("🔥")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**KONTOOLLLL!!**\n**KEKUATAN KONTOL** : %sms\n**DURASI KONTOL** : {uptime}🕛" % (duration))
+    await pong.edit(f"**KENTANGGORENG**\n**KEKUATAN KENTANG** : %sms\n**DURASI KENTANG** : {uptime}🕛" % (duration))
 
 
 @register(outgoing=True, pattern="^Speed$")
@@ -179,7 +179,7 @@ async def speedtst(spd):
                    f"`{result['ping']}` \n"
                    "✧ **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   "✧ **BOT:** ⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐")
+                   "✧ **BOT:** ⭐𝗠𝗘𝗞𝗗𝗜-𝗶𝗕𝗢𝗧⭐")
 
 
 def speed_convert(size):
