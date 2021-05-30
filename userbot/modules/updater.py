@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari RAM-USERBOT.`'
+                ' untuk dapat deploy perubahan terbaru dari 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏.`'
             )
             repo.__del__()
             return
@@ -67,7 +67,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nSedang Dalam proses Update RAM-USERBOT, Mohon Menunggu 7-8 Menit`'
+                         '\nSedang Dalam proses Update 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏, Mohon Menunggu 7-8 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -91,7 +91,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`RAM-UBOT Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu.....`")
+            await event.edit("`𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏 Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu.....`")
             await asyncio.sleep(15)
             await event.delete()
 
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n**✣ 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏 Sudah Versi Terbaru**\n')
+            f'\n**✣ 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏🔥 Sudah Versi Terbaru**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**Pembaruan Untuk ⭐𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏⭐ [{ac_br}]:\n\n✨Pembaruan:**\n`{changelog}`'
+        changelog_str = f'**Pembaruan Untuk 🔥𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏🔥 [{ac_br}]:\n\n✨Pembaruan:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -208,18 +208,18 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update MEKDI iBOT**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari RAM-UBOT.__')
+        return await event.respond('**Perintah Untuk Update 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏.__')
 
     if force_update:
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('`✲ Proses Update RAM-UBOT, Loading....1%`')
-        await event.edit('`✲ Proses Update RAM-UBOT, Loading....20%`')
-        await event.edit('`✲ Proses Update RAM-UBOT, Loading....35%`')
-        await event.edit('`✲ Proses Update RAM-UBOT, Loading....77%`')
-        await event.edit('`✲ Proses Update RAM-UBOT, Updating...90%`')
-        await event.edit('`✲ Proses Update RAM-UBOT, Mohon Menunggu....100%`')
+        await event.edit('`✲ Proses Update 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏, Loading....1%`')
+        await event.edit('`✲ Proses Update 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏, Loading....20%`')
+        await event.edit('`✲ Proses Update 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏, Loading....35%`')
+        await event.edit('`✲ Proses Update 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏, Loading....77%`')
+        await event.edit('`✲ Proses Update 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏, Updating...90%`')
+        await event.edit('`✲ Proses Update 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏, Mohon Menunggu....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
@@ -234,9 +234,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru RAM-UBOT."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru 🔥𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏."
     "\n\n.update now"
-    "\nUsage: Memperbarui RAM-UBOT."
+    "\nUsage: Memperbarui 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏."
     "\n\n.update deploy"
-    "\nUsage: Memperbarui RAM-UBOT Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui 𝙈𝙀𝙆𝘿𝙄-𝙞𝘽𝙊𝙏 Dengan Cara Deploy Ulang."
 })
