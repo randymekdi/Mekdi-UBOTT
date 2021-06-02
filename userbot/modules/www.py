@@ -106,7 +106,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-                    f"┣[•**PONG!!**\n"
+                    f"┣[•**KENTANG!!**\n"
                     f"┣[•__Signal__    __:__ "
                     f"`%sms` \n"
                     f"┣[•__Uptime__ __:__ "
@@ -127,12 +127,12 @@ async def redis(pong):
     await pong.edit("__Pong..__")
     await pong.edit("__Ping...__")
     await pong.edit("__Pong....__")
-    await pong.edit("🌟")
+    await pong.edit("🔥")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-                    f"**            ⭐ 𝗠 𝗘 𝗞 𝗗 𝗜 - 𝗶𝗕𝗢𝗧 ⭐**\n"
+                    f"**            🔥 𝗠 𝗘 𝗞 𝗗 𝗜 - 𝗶𝗕𝗢𝗧 🔥**\n"
                     f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
                     f"** •  Sɪɢɴᴀʟ   :** "
                     f"`%sms` \n"
@@ -179,7 +179,7 @@ async def speedtst(spd):
                    f"`{result['ping']}` \n"
                    "✧ **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   "✧ **BOT:** ⭐𝗠𝗘𝗞𝗗𝗜-𝗶𝗕𝗢𝗧⭐")
+                   "✧ **BOT:** 🔥𝗠𝗘𝗞𝗗𝗜-𝗶𝗕𝗢𝗧🔥")
 
 
 def speed_convert(size):
